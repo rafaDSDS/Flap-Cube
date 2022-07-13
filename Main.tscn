@@ -1,0 +1,266 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://wall.gd" type="Script" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 20, 113.5 )
+
+[sub_resource type="OccluderPolygon2D" id=2]
+polygon = PoolVector2Array( 0, 0, 40, 0, 40, 227, 0, 227 )
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+position = Vector2( 151, 129 )
+
+[node name="Walls" type="Node" parent="."]
+
+[node name="wallUP" type="StaticBody2D" parent="Walls"]
+position = Vector2( 900, 0 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="Walls/wallUP"]
+margin_right = 40.0
+margin_bottom = 227.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/wallUP"]
+position = Vector2( 20, 113.5 )
+shape = SubResource( 1 )
+
+[node name="wallUP2" type="StaticBody2D" parent="Walls"]
+position = Vector2( 900, 373 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="Walls/wallUP2"]
+margin_right = 40.0
+margin_bottom = 227.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/wallUP2"]
+position = Vector2( 20, 113.5 )
+shape = SubResource( 1 )
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="Walls/wallUP2"]
+occluder = SubResource( 2 )
+
+[node name="wallUP3" type="StaticBody2D" parent="Walls"]
+position = Vector2( 789, 0 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="Walls/wallUP3"]
+margin_right = 40.0
+margin_bottom = 227.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/wallUP3"]
+position = Vector2( 20, 113.5 )
+shape = SubResource( 1 )
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="Walls/wallUP3"]
+occluder = SubResource( 2 )
+
+[node name="wallUP4" type="StaticBody2D" parent="Walls"]
+position = Vector2( 789, 374 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="Walls/wallUP4"]
+margin_right = 40.0
+margin_bottom = 227.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/wallUP4"]
+position = Vector2( 20, 113.5 )
+shape = SubResource( 1 )
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="Walls/wallUP4"]
+occluder = SubResource( 2 )
+
+[node name="wallUP5" type="StaticBody2D" parent="Walls"]
+position = Vector2( 993, 0 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="Walls/wallUP5"]
+margin_right = 40.0
+margin_bottom = 227.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/wallUP5"]
+position = Vector2( 20, 113.5 )
+shape = SubResource( 1 )
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="Walls/wallUP5"]
+occluder = SubResource( 2 )
+
+[node name="wallUP6" type="StaticBody2D" parent="Walls"]
+position = Vector2( 993, 373 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="Walls/wallUP6"]
+margin_right = 40.0
+margin_bottom = 227.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/wallUP6"]
+position = Vector2( 20, 113.5 )
+shape = SubResource( 1 )
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="Walls/wallUP6"]
+occluder = SubResource( 2 )
+
+[node name="wallUP9" type="StaticBody2D" parent="Walls"]
+position = Vector2( 1079, 0 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="Walls/wallUP9"]
+margin_right = 40.0
+margin_bottom = 227.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/wallUP9"]
+position = Vector2( 20, 113.5 )
+shape = SubResource( 1 )
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="Walls/wallUP9"]
+occluder = SubResource( 2 )
+
+[node name="wallUP10" type="StaticBody2D" parent="Walls"]
+position = Vector2( 1079, 373 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="Walls/wallUP10"]
+margin_right = 40.0
+margin_bottom = 227.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/wallUP10"]
+position = Vector2( 20, 113.5 )
+shape = SubResource( 1 )
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="Walls/wallUP10"]
+occluder = SubResource( 2 )
+
+[node name="wallUP11" type="StaticBody2D" parent="Walls"]
+position = Vector2( 1172, 0 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="Walls/wallUP11"]
+margin_right = 40.0
+margin_bottom = 227.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/wallUP11"]
+position = Vector2( 20, 113.5 )
+shape = SubResource( 1 )
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="Walls/wallUP11"]
+occluder = SubResource( 2 )
+
+[node name="wallUP12" type="StaticBody2D" parent="Walls"]
+position = Vector2( 1172, 373 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="Walls/wallUP12"]
+margin_right = 40.0
+margin_bottom = 227.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/wallUP12"]
+position = Vector2( 20, 113.5 )
+shape = SubResource( 1 )
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="Walls/wallUP12"]
+occluder = SubResource( 2 )
+
+[node name="wallUP13" type="StaticBody2D" parent="Walls"]
+position = Vector2( 1265, 0 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="Walls/wallUP13"]
+margin_right = 40.0
+margin_bottom = 227.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/wallUP13"]
+position = Vector2( 20, 113.5 )
+shape = SubResource( 1 )
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="Walls/wallUP13"]
+occluder = SubResource( 2 )
+
+[node name="wallUP14" type="StaticBody2D" parent="Walls"]
+position = Vector2( 1265, 373 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="Walls/wallUP14"]
+margin_right = 40.0
+margin_bottom = 227.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/wallUP14"]
+position = Vector2( 20, 113.5 )
+shape = SubResource( 1 )
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="Walls/wallUP14"]
+occluder = SubResource( 2 )
+
+[node name="wallUP7" type="StaticBody2D" parent="Walls"]
+position = Vector2( 689, 0 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="Walls/wallUP7"]
+margin_right = 40.0
+margin_bottom = 227.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/wallUP7"]
+position = Vector2( 20, 113.5 )
+shape = SubResource( 1 )
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="Walls/wallUP7"]
+occluder = SubResource( 2 )
+
+[node name="wallUP8" type="StaticBody2D" parent="Walls"]
+position = Vector2( 689, 373 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="Walls/wallUP8"]
+margin_right = 40.0
+margin_bottom = 227.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/wallUP8"]
+position = Vector2( 20, 113.5 )
+shape = SubResource( 1 )
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="Walls/wallUP8"]
+occluder = SubResource( 2 )
